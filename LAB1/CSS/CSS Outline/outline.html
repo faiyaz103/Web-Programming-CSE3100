@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline</title>
+    <style>
+        /* Outline differs from borders! Unlike border, the outline is
+        drawn outside the element's border, and may overlap other content.
+        Also, the outline is NOT a part of the element's dimensions; the 
+        element's total width and height is not affected by the width of 
+        the outline. */
+        p.one{
+            border: 2px solid black;
+            outline-style: dotted; /*None of the other outline properties 
+                                    will have ANY effect unless the outline-style 
+                                    property is set!*/
+            outline-width: 6px;
+            outline-color: red;
+            outline-offset: 5px; /*outline-offset property adds space
+                                between an outline and the edge/border 
+                                of an element. The space between an element 
+                                and its outline is transparent.*/
+        }
+        /* Outline Short-hand */
+        p.out{
+            border: 2px solid blue;
+            outline: 3px dashed violet;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    <p class="out">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+</body>
+</html>

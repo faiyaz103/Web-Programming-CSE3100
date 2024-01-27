@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan and Colspan</title>
+
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <table style="width: 100%;">
+
+        <tr>
+            <th colspan="2">Months</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>February</td>
+            <td>23000</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>April</td>
+            <td rowspan="2">32000</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>June</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

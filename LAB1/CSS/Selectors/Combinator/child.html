@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        div > p{
+            background-color: cadetblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Child of div</p>
+        <p>Child of div</p>
+        <p>Child of div</p>
+
+        <section>
+            <p>Descendant but not Child of div</p>
+        </section>
+    </div>
+
+    <p>Not Child of div</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Element</title>
+</head>
+<body>
+
+    <form>
+
+    <!--The <select> element defines a drop-down list:-->
+    <label for="buses">Choose Bus:</label>
+    <select name="buses" id="buses">
+        <!--By default, the first item in the drop-down list is selected.-->
+        <option value="Econo Service">Econo Service</option>
+        <option value="Desh Travels">Desh Travels</option>
+        <option value="Shanti Paribahan">Shanti Paribahan</option>
+    </select>
+    <br>
+
+    <!--To define a pre-selected option, add the selected attribute to the option:-->
+    <label for="bustype">Choose Bus Type:</label>
+    <select name="bustype" id="bustype">
+        <option value="non_ac">NON AC</option>
+        <option value="ace">AC Economy</option>
+        <option value="acb" selected>AC Business</option>
+        <option value="sleeper">Sleeper Coach</option>
+    </select>
+    <br><br>
+
+    <!--Use the size attribute to specify the number of visible values:-->
+    <label for="boarding">Choose Boarding Point:</label>
+    <select name="boarding" id="boarding" size="4">
+        <option value="arm">Arambag</option>
+        <option value="kom">Komolapur</option>
+        <option value="jat">Jatrabari</option>
+        <option value="sd">Sayedabad</option>
+        <option value="sha">Shonir Akhra</option>
+        <option value="kach">Kachpur</option>
+        <option value="cum">Cumilla</option>
+        <option value="feni">Feni</option>
+    </select>
+    <br><br>
+
+    <!--Use the multiple attribute to allow the user to select more than one value:-->
+    <label for="services">Choose Services</label>
+    <select name="services" id="services" size="3" multiple>
+        <option value="water">Water Bottle</option>
+        <option value="blanket">Blanket</option>
+        <option value="buffet">Buffet</option>
+        <option value="prayer">Prayer Break</option>
+        <option value="softdrink">Soft Drinks</option>
+    </select>
+    <!--Hold down the Ctrl (windows) / Command (Mac) button to select
+        multiple options.-->
+
+    </form>
+</body>
+</html>

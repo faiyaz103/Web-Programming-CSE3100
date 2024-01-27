@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Flex</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+        .container > div{
+            width: 33%;
+        }
+    </style>
+
+</head>
+<body>
+    <!--The CSS Flexbox Layout Module was introduced to make it easier
+        to design flexible responsive layout structure without using 
+        float or positioning. To make the CSS flex method work, 
+        surround the <div> elements with another <div> element and 
+        give it the status as a flex container.-->
+    <div class="container">
+        <div style="background-color: bisque;">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos incidunt optio consequuntur mollitia nemo magni.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vero vel saepe ab culpa cupiditate.</p>
+        </div>
+
+        <div style="background-color: cadetblue;">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos incidunt optio consequuntur mollitia nemo magni.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vero vel saepe ab culpa cupiditate.</p>
+        </div>
+
+        <div style="background-color: violet;">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos incidunt optio consequuntur mollitia nemo magni.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vero vel saepe ab culpa cupiditate.</p>
+        </div>
+    </div>
+</body>
+</html>

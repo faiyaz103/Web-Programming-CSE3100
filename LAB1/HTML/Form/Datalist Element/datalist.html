@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist Element</title>
+</head>
+<body>
+    <!--The <datalist> element specifies a list of pre-defined options for an <input> element.
+    Users will see a drop-down list of the pre-defined options as they input data.
+    The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.-->
+
+    <form>
+        <label for="buses">Choose Preferred Bus:</label>
+        <input type="text" list="operators" name="operator">
+        <datalist id="operators">
+            <option value="Econo Service">
+            <option value="Ekushey Express">
+            <option value="Himachol Express">
+        </datalist>
+    </form>
+</body>
+</html>

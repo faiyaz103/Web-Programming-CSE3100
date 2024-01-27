@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding and Width</title>
+    <style>
+        div.one{
+            border: 2px solid red;
+            width: 200px;
+            padding: 40px; /*200+40+40 = 280 width*/
+        }
+        div.two{
+            border: 2px solid red;
+            width: 200px;
+            padding: 40px;
+            box-sizing: border-box; /*Only 200 width*/
+        }
+    </style>
+</head>
+<body>
+    <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quisquam reiciendis, numquam architecto consectetur placeat optio fugit, minima ratione eligendi earum laborum iusto natus voluptatum minus? Quasi velit perferendis molestiae?</div>
+    <br>
+    <div class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi saepe officia optio, voluptatibus libero tenetur nesciunt. Ipsam tenetur minima fugiat, ab obcaecati mollitia, dignissimos dolores corrupti provident incidunt, eligendi ad.</div>
+</body>
+</html>
