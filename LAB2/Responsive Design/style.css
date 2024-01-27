@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    width: auto;
+}
+.parent{
+    height: 80%;
+    width: 80%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.child{
+    height: 30%;
+    width: 30%;
+    background-color: red;
+    margin: 5PX;
+}
+
+@media screen and (max-width: 700px){
+    .parent{
+        background-color: cadetblue;
+        flex-direction: column;
+    }
+    .child{
+        width: 90%;
+    }
+}
